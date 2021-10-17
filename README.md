@@ -15,7 +15,7 @@ Building AI course project
 
 ## Background
 
-A help Desk service is receiving hundreds of help tickets per hour classified in Category and Severity by the requester. Sometimes requesters classify incidents in the wrong category and trends to over prioritize with a higher severity than needed. 
+A help desk service is receiving hundreds of help tickets per hour classified in Category and Severity by the requester. Sometimes requesters classify incidents in the wrong category and trends to over prioritize with a higher severity than needed. 
 
 For the HD team performance is critical to have the right category classification in other to assign incidents to the right expert. 
 And with a high input ratio of incidents, prioritize real higher severities is needed to resolve most critical incidents first.
@@ -24,7 +24,7 @@ While solving each incident the HD team will reclassify the ticket in a Final Ca
 
 ## How is it used?
 
-The tickets will include a description of the problem and the impact writen by the requester in free text. Based on a NLP analisys of the free text the Help-the-Help Deskbot will compare the Category-Severity classification provided as input by the user with the final classifictions of most similar description in a collection of recent resolved samples. Then it will decide to confirm or reclassify the ticket in Bot-Category and Bot-Severity classifications. The team will now use Bot classification to prioritize and work with tickets in the queue. 
+The tickets will include a description of the problem and the impact writen by the requester in free text. Based on a NLP analisys of the free text the Help-the-Help Deskbot will compare the Category-Severity classification provided as input by the user with the final classifictions of most similar description in a collection of recent resolved samples. Then it will decide to confirm or reclassify the ticket in bot-Category and bot-Severity classifications. The team will now use Bot classification to prioritize and work with tickets in the queue. 
 
 In subsequent cycles the system will also use the experience to learn when its corrections are good or not and adjust parametrization to better guess the Final choices of the HD Team
 
@@ -32,7 +32,7 @@ In subsequent cycles the system will also use the experience to learn when its c
 
 
 ## Data sources and AI methods
-Data will come from the historical data base of the HD Ticketing system. A collection of closed tickets that have a final categorization from the HD team will be used as Train Data and a selection of tickets prior to be solved will be selected as test data. Comparation of Deskbot categorization versus HD final categorization will measure the level of precision of the Deskbot and will input optimization process.
+Data will come from the historical data base of the HD ticketing system. A collection of closed tickets that have a final categorization from the HD team will be used as train data and a selection of tickets prior to be solved will be selected as test data. Comparation of Deskbot categorization versus HD final categorization will measure the level of precision of the Deskbot and will input optimization process.
    
 Algoritms considered to be used:
    * Bayesian classification to select the worlds that are Relevant/non-Relevant in the text
