@@ -31,53 +31,28 @@ In subsequent cycles the system will also use the experience to learn when its c
 
 Images will make your README look nice!
 Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Help Desk](https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_%D0%BC%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D0%BE%D0%BB%D0%BB-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0_%D0%BF%D0%BE_%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%B0%D0%BC_%D0%BA%D0%BE%D1%80%D0%BE%D0%BD%D0%B0%D0%B2%D0%B8%D1%80%D1%83%D1%81%D0%B0.jpg)
-
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
-
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
-
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
+![Help Desk]<imh src="https://upload.wikimedia.org/wikipedia/commons/b/b4/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_%D0%BC%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D0%BE%D0%BB%D0%BB-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0_%D0%BF%D0%BE_%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%B0%D0%BC_%D0%BA%D0%BE%D1%80%D0%BE%D0%BD%D0%B0%D0%B2%D0%B8%D1%80%D1%83%D1%81%D0%B0.jpg" width="300">
 
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
-
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
+Data will come from the historcal data base of the HD Ticketing system. A collection of closed tickets that have a final categorization from the HD team will be used as Train Data and a selection of tickets prior to be solved will be selected as test data. Comparation of Deskbot categorization versus HD final categorization will measure the level of precision of teh Dekbot and will input optimization process.
+   
+Algoritms considered to be used:
+   * Bayesian clasification to select the worlds that are Relevant/non-Relevant in the text
+   * Nearest Neighbor to select categorization
+   * Logistic Regresion to calculate priority in range [0.0 , 1.1]
+   
+ 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+Comunication of the system to users must be carfully planned. Users might feel unconfortable with an automatic bot changing their severity perception. 
+Users which tickets priority is reduced must be explained it is in the benefit of the overall performance and faster response to higher impact incidents.
 
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+In addition of AI programing skills experience in HD service management is requiered. Stadisticall Analisys of ticketing data will provide insight of the relevant words, probability of severity overrating, etc.
 
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+* [Mos.ru, CC BY 4.0](https://creativecommons.org/licenses/by/4.0) / [via Wikimedia Commons](https://creativecommons.org/licenses/by/2.0)
